@@ -1,7 +1,17 @@
 /node_modules
 /build
 
-dev.js
+/server/config/dev.js
+
+/server/config/key.js
+
+/client/src/components/Config.js
+
+/client/yarn.lock
+
+.idea
+
+/client/src/hoc
 
 
 

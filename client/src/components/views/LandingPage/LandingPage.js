@@ -1,6 +1,7 @@
-import React, { useEffect, initialState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaCode } from "react-icons/fa";
 import { API_URL, API_KEY } from "../../Config";
+import MainImage from './Sections/MainImage'
 
 import { Typography, Row } from 'antd';
 const { Title } = Typography;
@@ -24,31 +25,17 @@ function LandingPage() {
         <div style={{ width: '100%', margin: 0 }}>
 
             {/* Movie Main Image */}
-            <div style={{ background:
-                `linear-gradient(to bottom, rgba(0,0,0,0)
-                39%, rgba(0,0,0,0)
-                41%, rgba(0,0,0,0.65)
-                100%),
-                url(''), #1c1c1c`,
-                    height: '500px',
-                    backgroundSize: '100%, cover',
-                    backgroundPosition: 'center, center',
-                    width: '100%',
-                    position: 'relative' }}>
+            {Movies[0] &&
+            <MainImage image={`${IMAGE_URL}w1280${Movies[0].backdrop_path && Movies[0].backdrop_path}`}
+                       title={Movies[0].original_title} text={Movies[0].overview} />
+            }
 
-            </div>
 
-            <div>
-                <div style={{ position: 'absolute', maxWidth: '500px', bottom: '2rem', marginLeft: '2rem' }}>
-                    <Title style={{ color: 'white' }} level={2} > Title</Title>
-                    <p style={{ color: 'white', fontSize: '1rem' }}>text</p>
-                </div>
 
-            </div>
 
             {/* Body */}
             <div style={{ width: '85%', margin: '1rem auto' }}>
-            <Title level={2} > Movies be latest</Title>
+                <Title level={2} > Movies by latest</Title>
                 <hr />
 
                 {/* Grid Cards */}

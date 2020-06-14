@@ -22,3 +22,14 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+/server/config/dev.js
+
+/server/config/key.js
+
+/client/src/components/Config.js
+
+/client/yarn.lock
+
+.idea
+
+/client/src/hoc
