@@ -28,6 +28,7 @@
     "react-redux": "^5.0.7",
     "saslprep": "^1.0.3",
     "supports-color": "^7.1.0",
+    "yarn": "^1.22.4",
     "yarn-update-lock": "^1.0.0",
     "yarn.lock": "0.0.1-security"
   },

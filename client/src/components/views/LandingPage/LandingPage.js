@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaCode } from "react-icons/fa";
-import { API_URL, API_KEY } from "../../Config";
+import { API_URL, API_KEY, IMAGE_URL } from "../../Config";
 import MainImage from './Sections/MainImage'
 
 import { Typography, Row } from 'antd';
@@ -29,8 +29,6 @@ function LandingPage() {
             <MainImage image={`${IMAGE_URL}w1280${Movies[0].backdrop_path && Movies[0].backdrop_path}`}
                        title={Movies[0].original_title} text={Movies[0].overview} />
             }
-
-
 
 
             {/* Body */}
